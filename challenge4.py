@@ -12,8 +12,8 @@ def random_color():
     r = random.randint(0, 255)
     g = random.randint(0, 255)
     b = random.randint(0, 255)
-    random_color = (r, g, b)
-    return (r, g, b)
+    color = (r, g, b)
+    return color
 
 
 directions = [0, 90, 180, 270]  # 0: North, 90: East, 180: South, 270: West
