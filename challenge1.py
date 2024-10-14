@@ -1,12 +1,16 @@
 from turtle import Turtle, Screen
 
-timmy = Turtle()
-timmy.shape("turtle")
-timmy.color("#FFC0CB")
-
-for i in range(4):
-    timmy.forward(100)
-    timmy.left(90)
-
+tim = Turtle()
 screen = Screen()
+
+
+def move_forward():
+    tim.forward(10)
+
+
+screen.listen()
+# Function as input for onkey function
+# Use keyword argument instead of positional argument
+screen.onkey(key="space", fun=move_forward)
+
 screen.exitonclick()
